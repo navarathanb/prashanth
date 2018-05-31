@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<style>
+			#data{
+			width:300px;height:550px;border:2px solid gray;padding:10px;overflow:hidden;
+			}
+			#scroll{
+			position:relative;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="data" onmouseover="stopScroll()" onmouseout="startScroll()">
+			<div id="scroll">
+				<p>Andhra Pradesh is a state bordering India’s southeastern coast.</p>
+			<p>Major cultural landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. </p>
+			<p>It’s visited by tens of millions of pilgrims annually. The major northern port of Visakhapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal</p>
+			<p>offering spots for swimming and surfing.</p>
+			<p>Andhra Pradesh is a state bordering India’s southeastern coast.</p>
+			<p>Major cultural landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. </p>
+			<p>It’s visited by tens of millions of pilgrims annually. The major northern port of Visakhapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal</p>
+			<p>offering spots for swimming and surfing.</p>
+			</div>
+		</div>
+		<script>	
+			var height = document.getElementById("data").offsetHeight-30;
+			var height2 = document.getElementById("scroll").offsetHeight;
+			
+			document.getElementById("scroll").style.top = height;
+			
+			var i = height;
+			var start;
+			function disp(){
+				document.getElementById("scroll").style.top = i+"px";
+				i--;
+				if(i<=(height-height2)-height)
+				{
+				i=height;
+				}
+				
+			}
+			function stopScroll(){
+				clearInterval(start);
+			}
+			
+			function startScroll(){
+				start = setInterval("disp()",10);
+			}
+			startScroll();
+			//disp();
+		</script>
+	</body>
+</html>

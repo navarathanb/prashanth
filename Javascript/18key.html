@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<style>
+			.data{
+			width:300px;height:auto;border:2px solid gray;color:white;padding:10px;
+			color:black;
+			}
+			.img{
+			width:100%;height:180px;
+			}
+		</style>
+		<script>	
+			function disp(val){
+				document.getElementById("count").innerHTML = val.length;
+			}
+		</script>
+	</head>
+	<body>
+	<!-- onkeydown, onkeypress, onkeyup-->
+		<textarea rows="7" cols="30" onkeyup="disp(this.value)"></textarea>
+		<span id="count"></span>
+	</body>
+</html>

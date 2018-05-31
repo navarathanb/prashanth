@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script>
+			function disp(val){//implementation of a disp function
+				if(val=='AP State'){
+					document.getElementById("res").innerHTML = "THis is Ap State..";
+				}
+				else if(val=='UP State'){
+					document.getElementById("res").innerHTML = "THis is UP State..";
+				}
+				else if(val=='TS State'){
+					document.getElementById("res").innerHTML = "THis is TS State..";
+				}
+				else{
+				document.getElementById("res").innerHTML = "Please select any state";
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<select id="state" onchange="disp(this.value)">
+			<option>Select State</option>
+			<option>AP State</option>
+			<option>UP State</option>
+			<option>TS State</option>
+		</select>
+		<div id="res" style="width:300px;height:200px;border:2px solid red;padding:10px;"></div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+	<head></head>
+	<body>
+		<script>
+			var val1 = prompt("Enter value1");//string type
+			var val2 = prompt("Enter value2");
+			var val4 = prompt("enter + or - or / or *");
+			
+			switch(val4){
+				case '+':
+				var val3 = parseInt(val1)+parseInt(val2);
+				alert("sum of two values "+val3);
+				break;
+				case '-':
+				var val3 = parseInt(val1)-parseInt(val2);
+				alert("substraction : "+val3);
+				break;
+				case '/':
+				var val3 = parseInt(val1)/parseInt(val2);
+				alert("devision : "+val3);
+				
+				default:
+				var val3 = parseInt(val1)*parseInt(val2);
+				alert("multiplication : "+val3);
+			}
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

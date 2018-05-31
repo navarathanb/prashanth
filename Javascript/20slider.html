@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<style>
+			#data{
+			width:1000px;height:400px;background:red;margin:0px auto;
+			}
+			#data img{width:1000px;height:400px;}
+			
+		</style>
+		<script>	
+			var i=0;
+			function disp(){
+				var arr = ["img/s1.jpg","img/s2.jpg","img/s3.jpg","img/s4.jpg","img/s5.jpg"];
+				document.image.src = arr[i];
+				i++;
+				
+				if(i>=arr.length){
+				i=0;
+				}
+			}
+			setInterval("disp()",1000);
+		</script>
+	</head>
+	<body>
+		<div id="data">
+			<img src="img/s1.jpg" name="image" >
+		</div>
+	</body>
+</html>

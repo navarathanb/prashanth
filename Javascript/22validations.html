@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+			#data{
+			width:300px;height:550px;border:2px solid gray;padding:10px;overflow:hidden;
+			}
+			#scroll{
+			position:relative;
+			}
+			
+		</style>
+		<script src="validations.js"></script>
+	</head>
+	<body>
+		<div style="color:red;margin:10px;" id="error"></div>
+		<form method="get" action="index.html">
+			<table>
+				<tr><td>Name : </td><td><input type="text" id="name" name="name" value=""></td></tr>
+			
+			<tr><td>Email :</td><td> <input type="text" id="email" name="email"></td></tr>
+			<tr><td>Password :</td><td> <input type="password" id="pwd" name="pwd"></td></tr>
+			
+			<tr><td>Mobile :</td><td> <input type="text" id="mobile" name="mobile" maxlength="10"></td></tr>
+			
+			<tr><td>Message :</td><td> <textarea id="msg" name="msg" rows="6" cols="30"></textarea></td></tr>
+			<tr><td>Gender :</td><td>Male <input type="radio" name="gender" id="male" value="male"/> Female <input type="radio" name="gender" id="female" value="female"/></td></tr>
+			<tr><td>Hobbies :</td><td>Cricket <input type="checkbox" name="crik" id="crik" value="cricket"/> Carroms <input type="checkbox" name="carrom" id="carroms" value="carroms"/></td></tr>
+			
+			<tr><td>State :</td><td>
+				<select id="state" name="state" >
+					<option>Select state</option>
+					<option>AP state</option>
+					<option>UP state</option>
+					<option>TS state</option>
+				</select>
+			</td></tr>
+			
+			
+			<tr><td> </td><td>
+				<input type="submit" id="submi" name="sbmit" value="Register" onclick="return validate()">
+			</td></tr>
+			</table>
+		</form>
+	</body>
+</html>

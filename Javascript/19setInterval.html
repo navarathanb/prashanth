@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<style>
+			#data{
+			width:100px;height:100px;background:red;position:relative;
+			}
+			
+		</style>
+		<script>	
+			var i=1;
+			function disp(){
+				document.getElementById("data").style.left=i*10;
+				document.getElementById("data").style.top=i*10;
+				if(i>=50)
+				{
+				i=1;
+				}
+				i++;
+			}
+			setInterval("disp()",100);
+		</script>
+	</head>
+	<body>
+		<div id="data"></div>
+	</body>
+</html>

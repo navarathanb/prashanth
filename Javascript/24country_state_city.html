@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<style>
+			#selCountry,#selState{
+			width:300px;height:40px;margin-bottom:5px;font-size:20px;
+			}
+		</style>
+		<script src="countriesDisp.js">
+			
+		</script>
+	</head>
+	<body>
+		<select id="selCountry" onchange="selstate(this.value)">
+			<script>
+				selcountry();
+			</script>
+		</select>
+		<select id="selState" onchange="selcity(this.value)" disabled>
+			<option>select state</option>
+		</select>
+		
+	</body>
+</html>

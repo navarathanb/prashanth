@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<style>
+		</style>
+		<script>
+			function disp(){
+				var tag = document.getElementById("tag").value;
+				var txt = document.getElementById("txt").value;
+				
+				var tagC = document.createElement(tag);//<h2> </h2>
+				var txtC = document.createTextNode(txt);
+				tagC.appendChild(txtC);//<h2>Welcome</h2>
+				document.getElementById("res").appendChild(tagC);
+			}
+		</script>
+	</head>
+	<body>
+		Tag<input type="text" id="tag"><br>
+		Text<input type="text" id="txt"><br>
+		<input type="submit" value="submit" onclick="disp()">
+		<div id="res">This is div tag</div>
+	</body>
+</html>

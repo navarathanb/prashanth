@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script>
+			function disp(val){//implementation of a disp function
+			var val1= document.getElementById("val1").value;
+			var val2 = document.getElementById("val2").value;
+			if(val=='sum'){
+			var val3 = parseInt(val1)+parseInt(val2);
+				document.getElementById("res").innerHTML = "Sum of two values : "+val3;
+			}
+			else if(val=='sub'){
+			var val3 = parseInt(val1)-parseInt(val2);
+				document.getElementById("res").innerHTML = "Sum of two values : "+val3;
+			}
+			else if(val=='mul'){
+			var val3 = parseInt(val1)*parseInt(val2);
+				document.getElementById("res").innerHTML = "Sum of two values : "+val3;
+			}
+			else{
+			var val3 = parseInt(val1)/parseInt(val2);
+				document.getElementById("res").innerHTML = "Sum of two values : "+val3;
+			}
+			}
+			//document.write(disp(2,5));//calling the disp function
+		</script>
+	</head>
+	<body>
+		val1 <input type="text" id="val1" value="">
+		<br>
+		<br>
+		val2 <input type="text" id="val2">
+		<br>
+		<br>
+		<input type="submit" value="sum" onclick="disp('sum')">
+		<input type="submit" value="mul" onclick="disp('mul')">
+		<input type="submit" value="sub" onclick="disp(this.value)">
+		<input type="submit" value="div" onclick="disp(this.value)">
+		<div id="res"></div>
+	</body>
+</html>
